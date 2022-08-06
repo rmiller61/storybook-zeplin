@@ -16,9 +16,13 @@ interface ZeplinPanelProps {
     onLogout: () => void;
 }
 
+interface ZeplinScreenWithLatestVersion extends Screen {
+    latestVersion: null;
+}
+
 interface ZeplinState {
     selectedLink: string;
-    zeplinData: Component | Screen | null;
+    zeplinData: Component | ZeplinScreenWithLatestVersion | null;
     user: User | null;
     zoomLevel: number;
     loading: boolean;
@@ -166,7 +170,14 @@ const ZeplinPanel: React.FC<ZeplinPanelProps> = ({ zeplinLink, onLogout }) => {
         image: { originalUrl, width, height },
         description,
         updated,
+        latestVersion
     } = zeplinData;
+
+    const image = {
+        src: latestVersion?.imageUrl || originalUrl,
+        width: latestVersion?.width || width,
+        height: latestVersion?.height || height,
+    };
 
     const LinksSection = links.length > 1 && (
         <Select onChange={selectZeplinLink} value={designLink}>
@@ -198,7 +209,7 @@ const ZeplinPanel: React.FC<ZeplinPanelProps> = ({ zeplinLink, onLogout }) => {
             <Divider />
 
             <Header>
-                <OverlayPanel imageUrl={originalUrl} />
+                <OverlayPanel imageUrl={image.src} />
             </Header>
 
             <Divider />
@@ -212,10 +223,10 @@ const ZeplinPanel: React.FC<ZeplinPanelProps> = ({ zeplinLink, onLogout }) => {
                 >
                     <img
                         style={{ transform: `scale(${zoomLevel})` }}
-                        src={originalUrl}
+                        src={image.src}
                         alt={name}
-                        width={width}
-                        height={height}
+                        width={image.width}
+                        height={image.height}
                     />
                 </a>
             </ImageContainer>
