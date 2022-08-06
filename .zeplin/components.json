@@ -11,10 +11,9 @@
             }
         }
     ],
-    "projects": [
-        "5ecff3a2d8a8ab2a61937a66"
+    "styleguides": [
+        "62ed7f46039c017488afdcc1"
     ],
-    "styleguides": [],
     "components": [
         {
             "path": ".storybook/Button/Button.jsx",

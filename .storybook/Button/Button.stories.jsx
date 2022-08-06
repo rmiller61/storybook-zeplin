@@ -23,17 +23,17 @@ export const ButtonMultiple = () => (
 
 ButtonNormal.parameters = {
     zeplinLink:
-        "zpl://components?pid=5ecff3a2d8a8ab2a61937a66&coids=6050f561b398fd6ec62563ff",
+        "https://app.zeplin.io/styleguide/62ed7f46039c017488afdcc1/components?coid=62ed57f2d27ae572aa3a5ae9",
 };
 
 ButtonPressed.parameters = {
     zeplinLink:
-        "zpl://components?pid=5ecff3a2d8a8ab2a61937a66&coids=6050f561afc34742f62d40b9",
+        "https://app.zeplin.io/styleguide/62ed7f46039c017488afdcc1/components?coid=62ed57f2d27ae572aa3a5ae9",
 };
 
 ButtonDisabled.parameters = {
     zeplinLink:
-        "zpl://components?pid=5ecff3a2d8a8ab2a61937a66&coids=6050f5610d8b6e6cd0c1f8b2",
+        "https://app.zeplin.io/styleguide/62ed7f46039c017488afdcc1/components?coid=62ed57f2d27ae572aa3a5ae9",
 };
 
 ButtonMultiple.parameters = {
