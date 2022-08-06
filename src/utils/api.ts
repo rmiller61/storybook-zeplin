@@ -128,7 +128,8 @@ export async function getZeplinResource(
                     linkProperties.pid,
                     linkProperties.coid,
                     {
-                        includeLinkedStyleguides: true
+                        includeLinkedStyleguides: true,
+                        includeLatestVersion: true
                     }
                 );
                 zeplinResourceCache.set(zeplinLink, data);
@@ -139,7 +140,8 @@ export async function getZeplinResource(
                     linkProperties.stid,
                     linkProperties.coid,
                     {
-                        includeLinkedStyleguides: true
+                        includeLinkedStyleguides: true,
+                        includeLatestVersion: true
                     }
                 );
                 zeplinResourceCache.set(zeplinLink, data);
