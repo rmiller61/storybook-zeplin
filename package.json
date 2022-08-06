@@ -20,7 +20,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mertkahyaoglu/storybook-zeplin.git"
+        "url": "git+https://github.com/rmiller61/storybook-zeplin.git"
     },
     "author": {
         "name": "Mert Kahyaoğlu",
@@ -28,9 +28,9 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/mertkahyaoglu/storybook-zeplin/issues"
+        "url": "https://github.com/rmiller61/storybook-zeplin/issues"
     },
-    "homepage": "https://github.com/mertkahyaoglu/storybook-zeplin#readme",
+    "homepage": "https://github.com/rmiller61/storybook-zeplin#readme",
     "peerDependencies": {
         "@storybook/addons": ">=5.0.0",
         "@storybook/api": ">=5.0.0",
